@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --font-text: "Caveat";
-  --font-title: "Angkor";
+    --font-text: "Caveat";
+    --font-title: "Angkor";
+    --font-button: "Montserrat";
 }
 
 body {
-  background: url('/img/back.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+    background: url("/img/back.png") no-repeat;
+    background-size: cover;
 }
 

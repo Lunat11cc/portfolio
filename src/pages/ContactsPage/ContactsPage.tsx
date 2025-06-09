@@ -1,9 +1,8 @@
 import React from 'react'
+import {cvaTitle} from "@/widgets/Main/MainStyles";
 
-function ContactsPage() {
-  return (
-    <div>Contacts</div>
-  )
-}
-
-export default ContactsPage;
+export default function ContactsPage() {
+    return (
+        <div className={cvaTitle()}>Contacts</div>
+    );
+};

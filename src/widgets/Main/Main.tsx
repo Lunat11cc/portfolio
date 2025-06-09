@@ -1,11 +1,16 @@
 import React from "react";
-import { cvaTitle, cvaText } from "./MainStyles";
+import {cvaTitle, cvaText, cvaTextBlock, cvaMainContainer} from "./MainStyles";
+import ProjectsButton from "@/shared/Button/ProjectsButton/ProjectsButton";
 
 export default function Main() {
-  return (
-    <div>
-      <p className={cvaTitle()}>Ilya K.</p>
-      <p className={cvaText()}>Frontend Developer & Web Desinger</p>
-    </div>
-  );
-}
+    return (
+        <div className={cvaMainContainer()}>
+            <p className={cvaTitle()}>Ilya Kartashov</p>
+            <div className={cvaTextBlock()}>
+                <p className={cvaText()}>Frontend Developer &</p>
+                <p className={cvaText()}>Web Designer</p>
+            </div>
+            <ProjectsButton/>
+        </div>
+    );
+};
