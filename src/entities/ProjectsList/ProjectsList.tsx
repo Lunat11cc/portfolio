@@ -11,6 +11,7 @@ import {
     cvaProjectStack,
     cvaProjectDescription
 } from "@/entities/ProjectsList/ProjectsListStyles";
+import Link from "next/link";
 
 export default function ProjectsList() {
     const [hoveredId, setHoveredId] = useState<number | null>(null);
@@ -22,8 +23,10 @@ export default function ProjectsList() {
                 const isActive = hoveredId === project.id;
 
                 return (
-                    <div
+                    <Link
                         key={project.id}
+                        href={project.link}
+                        target="_blank"
                         className={`${cvaProjectCard()} ${isPressed ? "opacity-50" : "opacity-100"}`}
                         onMouseEnter={() => setHoveredId(project.id)}
                         onMouseLeave={() => setHoveredId(null)}
@@ -46,7 +49,7 @@ export default function ProjectsList() {
                                 alt="stack"
                             />
                         </div>
-                    </div>
+                    </Link>
                 )
 
             })}

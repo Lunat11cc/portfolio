@@ -4,4 +4,5 @@ export interface ProjectsListProps {
     name: string;
     description: string;
     stack: string;
+    link: string;
 }
