@@ -14,7 +14,7 @@ export const cvaTitle = cva(
 
 export const cvaText = cva(
     [
-        "text-3xl text-white font-text first-letter:text-red-400"
+        "text-3xl text-white font-text first-letter:text-red-300"
     ]
 );
 

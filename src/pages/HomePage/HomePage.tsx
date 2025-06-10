@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import Header from "@/widgets/Header/Header";
 import {cvaHomePage} from "./HomePageStyles";

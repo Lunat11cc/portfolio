@@ -1,8 +1,15 @@
+'use client';
+
 import React from 'react'
-import {cvaTitle} from "@/widgets/Main/MainStyles";
+import ProjectsList from "@/entities/ProjectsList/ProjectsList";
+import {cvaProjectPage, cvaProjectsPageTitle} from "@/pages/ProjectsPage/ProjectsPageStyles";
 
 export default function ProjectsPage() {
     return (
-        <div className={cvaTitle()}>Projects</div>
+        <div className={cvaProjectPage()}>
+            <div className={cvaProjectsPageTitle()}>My Projects</div>
+            <ProjectsList/>
+        </div>
+
     );
 };

@@ -13,12 +13,12 @@ export const cvaProjectsButton = cva([
     "cursor-pointer",
     "transition-all",
     "duration-300",
-    "hover:text-red-400",
+    "hover:text-red-300",
     "w-[100%]",
     "border-1",
     "border-white",
     "rounded-full",
-    "hover:border-red-400",
+    "hover:border-red-300",
     "my-8"
 ]);
 

@@ -13,7 +13,7 @@ export const cvaContactsButton = cva([
     "overflow-hidden",
     "mx-5",
     "group",
-    "hover:text-red-400",
+    "hover:text-red-300",
     "transition-all",
     "duration-300",
 ]);
