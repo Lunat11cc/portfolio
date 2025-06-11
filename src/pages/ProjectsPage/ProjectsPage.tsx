@@ -2,14 +2,17 @@
 
 import React from 'react'
 import ProjectsList from "@/entities/ProjectsList/ProjectsList";
-import {cvaProjectPage, cvaProjectsPageTitle} from "@/pages/ProjectsPage/ProjectsPageStyles";
+import {cvaProjectsPage, cvaProjectsPageTitle} from "@/pages/ProjectsPage/ProjectsPageStyles";
+import Header from "@/widgets/Header/Header";
 
 export default function ProjectsPage() {
     return (
-        <div className={cvaProjectPage()}>
-            <div className={cvaProjectsPageTitle()}>My Projects</div>
-            <ProjectsList/>
-        </div>
-
+        <>
+            <Header />
+            <div className={cvaProjectsPage()}>
+                <p className={cvaProjectsPageTitle()}>My Projects</p>
+                <ProjectsList/>
+            </div>
+        </>
     );
 };
